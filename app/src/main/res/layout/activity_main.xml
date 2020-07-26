@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bg_gradient"
+android:weightSum="2"
+    android:orientation="vertical"
+    tools:context="com.example.hrishitamavani.vivaand.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:hint="Type text here to convert to speech "
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="81dp"
+        android:id="@+id/editText" />
+
+    <Button
+        android:text="convert to speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="#05aabbcc"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+  android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:id="@+id/txtSpeechInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_settings_voice_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tap on mic to convert speech to text"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+</LinearLayout>
